@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main()
+{
+    int i, nilai[i];
+    int jumlah;
+    float rata2;
+
+    printf("masukkan jumlah bilangan :");
+    scanf("%d",&jumlah);
+
+    printf("masukkan bilangan :\n",i);
+    for (i = 0; i < n; i++) {
+        scanf("%d",&nilai[i]);
+        jumlah = jumlah + nilai[i];
+    }
+    rata2 = jumlah/i;
+
+    printf("rata rata dari nilai tersebut adalah %2.f \n",rata2);
+
+    return 0;
+}

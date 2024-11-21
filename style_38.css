@@ -1,0 +1,352 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'quicksand', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header .navbar-container .logo .nav-list {
+  height: 100vh;
+  /*vh = (viewport Height) tinggi elemen sama dengan tinggi viewport/layar pengguna */
+  margin: 0;
+  /*Ruang disekitar batas elemen bernilai 0 */
+  display: flex;
+  flex-direction: column;
+}
+
+header.navbar-container {
+  width: 100%;
+  padding-block: 1rem;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 9999;
+}
+
+header.navbar-container .logo img {
+  width: 120px;
+  /*(lebar) : lebar elemen 100px */
+}
+
+header.navbar-container .nav-list ul {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list li {
+  list-style-type: none;
+}
+
+header.navbar-container .nav-list li a {
+  padding: 0.5rem 1.5rem;
+  /*Ruang antara batas elemen dan konten elemen bernilai 0.5x dari padding induk (untuk horizontal) dan 1.5x dari padding induk (untuk vertikal) */
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 900;
+  color: black;
+  transition: all 0.2s ease-in-out;
+}
+
+header.navbar-container .nav-list li:hover a {
+  background-color: rgb(0, 30, 225);
+  color: white;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+}
+
+main {
+  display: flex;
+  line-height: 23px;
+}
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.title h1 {
+  font-size: 3rem;
+}
+
+.image-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-title img {
+  border-radius: 15px;
+  box-shadow: 1px 2px 5px 1px black;
+}
+
+.deskripsi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.deskripsi p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.sosial-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.sosial-media ul {
+  display: flex;
+  gap: 15px;
+}
+
+.sosial-media li {
+  list-style-type: none;
+}
+
+.sosial-media li a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+  transition: all 0.1s ease-in-out;
+}
+
+.sosial-media li a:hover {
+  color: blue;
+}
+
+#tentang {
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+}
+
+.title2 {
+  display: flex;
+  justify-content: center;
+}
+
+.title2 h2 {
+  font-size: 2rem;
+}
+
+.isi {
+  display: flex;
+  padding-top: 15px;
+}
+
+.isi p {
+  font-size: 19px;
+  font-weight: 400;
+  text-align: center;
+  margin: 10px;
+}
+
+#biodata {
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+}
+
+.title3 {
+  display: flex;
+  justify-content: center;
+}
+
+.title3 h2 {
+  font-size: 2rem;
+}
+
+.image-bio {
+  display: flex;
+  justify-content:space-around;
+  padding-top: 15px;
+  margin: 10px;
+}
+
+.image-bio img {
+  width: 400px;
+  height: 250px;
+  border-radius: 15px;
+  box-shadow: 1px 1px 3px 1px black;
+}
+
+.image-bio p {
+  display: flex;
+  justify-content: end;
+  font-size: 22px;
+  font-weight: 400;
+  align-self: center;
+  line-height: 35px;
+  left: 150px;
+}
+
+#gallery {
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+}
+
+.title4 {
+  display: flex;
+  justify-content: center;
+}
+
+.title4 h2{
+  font-size: 2rem;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 5px;
+  margin: 15px auto;
+  padding-top: 15px;
+}
+
+.box {
+  width: 200px;
+  height: 255px;
+  margin: 0 10px;
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
+}
+
+.box img {
+  width: 200px;
+  height: 250px;
+  border-radius: 9px;
+  transition: 1s;
+}
+
+.box:hover {
+  transform: scale(1.1);
+  z-index: 2;
+}
+
+aside {
+  flex: 4;
+}
+
+aside header {
+  text-align: center;
+  line-height: 35px;
+}
+
+aside section h3 {
+  color: blue;
+  line-height: 40px;
+}
+
+
+aside h3 span {
+  font-weight: 500;
+}
+
+aside figure img {
+  width: 150px;
+}
+
+footer {
+  padding: 30px;
+  background-color: rgb(0, 30, 255);
+  color: white;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 17px;
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .image-bio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  main aside {
+    align-self: center;
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  header .logo img{
+    display: flex;
+    justify-content: center;
+  }
+  main {
+    flex-flow: column nowrap;
+  }
+  main aside {
+    align-self: center;
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  header .logo img{
+    display: flex;
+    justify-content: center;
+  }
+  main {
+    flex-flow: column nowrap;
+  }
+  .title h1 {
+    font-size: 2rem;
+  }
+  .image-bio p {
+    font-size: 20px;
+  }
+  .deskripsi p {
+    font-size: 18px;
+  }
+  .image-bio img {
+    width: 350px;
+    height: 200px;
+  }
+  main aside {
+    align-self: center;
+    margin-bottom: 5px;
+  }
+}
